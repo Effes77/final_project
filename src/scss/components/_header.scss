@@ -112,7 +112,7 @@
                 width: 6px;
                 height: 6px;
                 border-radius: 50%;
-                background-color: $scnd-sep-color;
+                background-color: $second-sep-color;
                 top: 35%;
                 left: -12px;
         } 
@@ -140,7 +140,7 @@
         display: flex;
         font-weight: 700;
         letter-spacing: 1px;
-        font-size: $scnd-fz;
+        font-size: $second-fz;
 
             li {
                 width: 33px;
@@ -224,8 +224,8 @@
             & > li {
                 min-width: calc(100% - (24px));
                 min-height: 45px;
-                background-color: $scnd-color;
-                color: $act-main-color;
+                background-color: $second-color;
+                color: $active-main-color;
                 border-radius: 12px;                
                 text-align: center;               
                 align-content: center;
@@ -258,7 +258,7 @@
                 background-color: none;
 
                 @media screen and (max-width: 580px) {
-                    background-color: $scnd-sep-color;
+                    background-color: $second-sep-color;
             }
              }
 
@@ -279,7 +279,7 @@
             }
 
             &:active {
-                background-color: $scnd-sep-color;
+                background-color: $second-sep-color;
                 color: $main-color;
 
                 & span {

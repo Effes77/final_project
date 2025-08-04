@@ -14,7 +14,7 @@
     &__holder {
         border-radius: 12px;
         overflow: hidden;
-        background: $scnd-color;
+        background: $second-color;
         margin-bottom: 60px;
     }
 
@@ -59,7 +59,7 @@
 
     &__title {
         @include text-gradient;
-        font-size: 38px;
+        font-size: $h1-fz;
         margin-bottom: 25px;
         font-weight: 700;
 
@@ -69,7 +69,7 @@
     }
 
     & span {
-        color: $scnd-text-color;
+        color: $second-text-color;
 
         @media (max-width: 580px) {
             font-size: $h3-fz;

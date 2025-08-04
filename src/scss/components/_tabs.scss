@@ -23,12 +23,12 @@
 
 
     &__list {
-        font-size: 38px;
+        font-size: $h1-fz;
         font-weight: 700;
         display: flex;
         flex-direction: column;
         gap: 25px;
-        color: $scnd-text-color;
+        color: $second-text-color;
         margin-bottom: 15px;
         width: 47%;
         text-align: end;
@@ -40,7 +40,7 @@
     }  
 
         @media (max-width: 1024px) {
-         width: 57%;
+            width: 57%;
     } 
 
         @media (max-width: 768px) {
