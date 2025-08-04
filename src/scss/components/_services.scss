@@ -2,7 +2,6 @@
     padding: 60px 180px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
 
     @media (max-width: 1440px) {
         padding: 60px;
@@ -18,23 +17,17 @@
         justify-content: center;
         gap: 60px;
 
-        @media (max-width: 580px) {
-            gap: 30px;
-        } 
-        
-         & li {
-            width: calc(33.3% - 60px);
-            border: 1px solid red;
+        @include flex-spasing(3, 60px);
 
-            @media (max-width: 768px) {
-                width: calc(50% - 30px);
-            }  
-
-             @media (max-width: 580px) {
-                width: 100%;
+        @media (max-width: 768px) {
+            @include flex-spasing(2, 60px);
             } 
-        }
         
+        @media (max-width: 580px) {
+            @include flex-spasing(1, 30px);
+            padding-bottom: 60px;
+        } 
+          
     }
 
     &__advanteges {

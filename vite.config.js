@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 // you can use our path for your project
-const rootPath = '/https://github.com/Effes77/hlegal.git/'
+const rootPath = '/final_project/'
 // example: const rootPath = '/my-path/'
 
 export default defineConfig({

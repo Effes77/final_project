@@ -19,8 +19,13 @@ body {
 }
 
 .container {
-	max-width: 1880px;
+	max-width: 1720px;
 	margin: 0 auto;
+	padding: 0 60px;
+
+	@media (max-width: 480px) {
+        padding: 0 30px;
+    }
 }
 
 .title {
@@ -47,7 +52,7 @@ body {
 	}
 
 	&::after {
-		bottom: -11px;
+		bottom: -12px;
     	height: 12px;
     	right: 20px;
     	left: 20px;
@@ -64,10 +69,10 @@ body {
 }
 
 .cat-link {
+	display: inline-block;
 	color: $act-main-color;
     text-decoration: none;
 	font-weight: 700;
-	font-size: 14px;
 }
 
 .swiper-slide{

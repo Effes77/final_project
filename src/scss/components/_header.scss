@@ -17,8 +17,11 @@
     @media (max-width: 580px) {
         left: 0;
         transform: none;
-        padding: 0;
-        
+        padding: 0;  
+    }
+
+    @media (max-width: 480px) {
+        padding: 0;  
     }
 
     &__container {
@@ -70,7 +73,7 @@
     &__right {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 7px;
         align-items: flex-end;
 
          @media (max-width: 768px) {
@@ -139,7 +142,7 @@
         letter-spacing: 1px;
         font-size: $scnd-fz;
 
-            & li {
+            li {
                 width: 33px;
                 height: 25px;
                 border-radius: 8px;
@@ -152,7 +155,7 @@
             background-color: $accent-color;
         }
 
-        & li:not(.active):hover {
+        li:not(.active):hover {
             background-color: mix($base-secondary-color, transparent, 50%);
         }
     }
@@ -203,7 +206,7 @@
 
     &__menu {
         display: flex;
-        gap: 20px;
+        gap: 16px;
         font-weight: 700;
         justify-content: flex-end;
 
@@ -243,7 +246,7 @@
             }
         }
 
-        & li:not(.active):hover {
+        li:not(.active):hover {
             border-bottom: 2px solid;
 
             @media screen and (max-width: 580px) {
@@ -251,7 +254,7 @@
             }
         }
 
-        & li:not(.active):active {
+        li:not(.active):active {
                 background-color: none;
 
                 @media screen and (max-width: 580px) {

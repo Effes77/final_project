@@ -1,6 +1,6 @@
 .intro {
     background-color: $grd-superSoft-color;
-    background: url(/src/img/webp/intro-section_logo.png);
+    background: url('../src/img/webp/intro-section_logo.png');
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: contain;
@@ -55,7 +55,7 @@
             width: 15px;
             height: 15px;
             border: 1px solid $base-secondary-color;
-            border-width: 3px 3px 0 0;
+            border-width: 2px 2px 0 0;
             display: inline-block;
             transform: rotate(135deg);
             left: 12px;
