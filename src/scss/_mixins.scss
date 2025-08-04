@@ -1,0 +1,21 @@
+@mixin viewport-md {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin text-gradient {
+  background: $grd-accentText-color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@mixin flex-spasing($columnCount, $gap) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+  > div {
+    width: calc((100% - (#{$columnCount} - 1) * #{$gap}) / #{$columnCount});
+  }
+}

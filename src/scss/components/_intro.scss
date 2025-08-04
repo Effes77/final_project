@@ -1,0 +1,76 @@
+.intro {
+    background-color: $grd-superSoft-color;
+    background: url(/src/img/webp/intro-section_logo.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 580px) {
+        background-size: 100%;
+    }
+
+    @media (max-width: 480px) {
+        background-size: 115%;
+        margin-left: -65px;
+    }
+
+    @media (max-width: 375px) {
+        background-size: 120%;
+        margin-left: -15px;
+    }
+
+    &__title {
+        align-content: center;
+        font-size: 38px;
+        font-weight: 700;
+        margin: 0 auto;
+        text-align: center;
+
+        @media (max-width: 580px) {
+            max-width: 315px;
+    }
+
+    }
+
+    &__anchor {
+        font-size: $base-fz;
+        width: 42px;
+        height: 42px;
+        border: 2px solid rgba($base-secondary-color, 0.5);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translatex(-50%);
+        
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border: 1px solid $base-secondary-color;
+            border-width: 3px 3px 0 0;
+            display: inline-block;
+            transform: rotate(135deg);
+            left: 12px;
+            top: 9px;
+            opacity: 100%;
+
+        }
+
+        &:hover {
+            border: 2px solid rgba($accent-color, 0.5);
+            }
+
+        &:hover::after {
+                border: 1px solid $accent-color;
+                border-width: 3px 3px 0 0;
+            }
+    }
+}

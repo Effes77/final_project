@@ -1,0 +1,57 @@
+.services {
+    padding: 60px 180px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+
+    @media (max-width: 1440px) {
+        padding: 60px;
+    }  
+
+    @media (max-width: 580px) {
+        padding: 30px;
+    } 
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+
+        @media (max-width: 580px) {
+            gap: 30px;
+        } 
+        
+         & li {
+            width: calc(33.3% - 60px);
+            border: 1px solid red;
+
+            @media (max-width: 768px) {
+                width: calc(50% - 30px);
+            }  
+
+             @media (max-width: 580px) {
+                width: 100%;
+            } 
+        }
+        
+    }
+
+    &__advanteges {
+        display: block;
+        width: 92px;
+        height: 92px;
+        background-color: $base-secondary-color;
+        border-radius: 24px;
+    }
+
+    &__title {
+        font-size: $h3-fz;
+        margin-bottom: 15px;
+        margin-top: 30px;
+
+        &__title {
+            line-height: 26px;
+    }
+    }
+}
