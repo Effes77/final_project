@@ -45,7 +45,7 @@
                 height: 6px;
                 border-radius: 50%;
                 background-color: $second-text-color;
-                top: 38%;
+                top: 32%;
                 left: -13px;
                 @media (max-width: 700px) {
                     display: none;;
@@ -57,7 +57,7 @@
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 1px;
-        vertical-align: middle;
+        vertical-align: 2px;
     }
 
     &__menu {
@@ -76,7 +76,6 @@
             position: relative;
         }
         
-
         & li:nth-child(2) {
             font-weight: 700;
         }
@@ -88,7 +87,7 @@
                 height: 6px;
                 border-radius: 50%;
                 background-color: $second-text-color;
-                top: 38%;
+                top: 34%;
                 left: -14px;
                 @media (max-width: 700px) {
                     display: none;;

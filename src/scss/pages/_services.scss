@@ -1,0 +1,125 @@
+.services__page {
+.header {
+    &__logo {
+        position: relative;
+        display: flex;
+        text-decoration: none;
+        color: $base-secondary-color;
+        font-size: 36px;
+        gap: 29px;
+
+    &::after {
+        content: "/";
+        position: absolute;
+        color: #F0145A;
+        top: -6px;
+        left: 137px;
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
+
+   &__tab-logo {
+        position: relative;
+        display: none;
+        text-decoration: none;
+        color: $base-secondary-color;
+        font-size: 36px;
+        gap: 29px;
+
+        &::after {
+        content: "/";
+        position: absolute;
+        color: #F0145A;
+        top: -6px;
+        left: 137px;
+        font-size: 50px;
+        font-weight: 700;  
+    }
+    @media (max-width: 768px) {
+        display: flex;
+    }
+   }
+}
+
+.services {
+    padding-top: 176px;
+    margin-bottom: 94px;
+    @media (max-width: 1440px) {
+        padding-top: 176px;
+    }
+    @media (max-width: 768px) {
+        padding-top: 280px;
+    }
+    @media (max-width: 580px) {
+        padding-top: 160px;
+    }
+}
+
+.cat-link:hover {
+    color: $accent-color;
+}
+
+.footer {
+    padding: 30px;
+
+    @media (max-width: 768px) {
+        .container {
+            width: 507px;
+        }
+    }
+    @media (max-width: 700px) {
+        .container {
+            width: 100%;
+        }
+    }
+
+    &__nav{
+        margin-top: 0;
+    }
+    &__nav {
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 21px;
+        color: $main-color;
+        gap: 20px;
+        width: 100%;
+        @media (max-width: 768px) {
+            justify-content: flex-start;
+            align-items: center;
+        }
+        @media (max-width: 700px) {
+            margin-top: 0;
+        }
+        
+       & > li.footer__coopiright {
+            @media (max-width: 768px) {
+                margin: auto;
+                position: absolute;
+                bottom: 30px;
+                left: 32%;
+            }
+            @media (max-width: 700px) {
+                left: auto;
+            }
+        } 
+        
+        & li:nth-child(2):before {
+            @media (max-width: 580px) {
+                display: none;
+            }
+        }  
+    }
+    &__menu {
+        @media (max-width: 768px) {
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        & li + li::before {
+            @media (max-width: 580px) {
+                display: none;
+            }
+        } 
+    }
+}
+}

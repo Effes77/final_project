@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hilel law company</title>
+    <title>Services page</title>
   </head>
-  <body>
+  <body class="services__page">
     <div class="wrapper">
       <header class="header container">
         <div class="header__container">
           <a class="header__logo" href="../index.html"
-            ><img src="./src/img/webp/Logo.svg" alt="Hilel logo"
-          /></a>
+            ><img src="../src/img/webp/Logo.svg" alt="Hilel logo" />services</a
+          >
           <div class="header__right">
             <ul class="header__toplist">
               <li>
@@ -37,7 +37,7 @@
                     height="24"
                   >
                     <use
-                      href="/src/img/icons/icons.svg#icon-facebook_logo"
+                      href="../src/img/icons/icons.svg#icon-facebook_logo"
                       x="0"
                       y="0"
                     ></use>
@@ -45,27 +45,25 @@
                 </a>
               </li>
             </ul>
-            <a href="../index.html">
-              <img
-                class="header__tab-logo"
-                src="./src/img/webp/Logo.svg"
-                alt="Hilel logo"
-              />
+            <a class="header__tab-logo" href="../index.html">
+              <img src="../src/img/webp/Logo.svg" alt="Hilel logo" />services
             </a>
             <nav class="nav">
               <div class="nav__menu-holder">
                 <span class="nav__icon-close">
                   <svg viewBox="0 0 22 22" width="32" height="32">
                     <use
-                      xlink:href="/src/img/icons/icons.svg#icon-close"
+                      xlink:href="../src/img/icons/icons.svg#icon-close"
                       x="0"
                       y="0"
                     ></use>
                   </svg>
                 </span>
                 <ul class="nav__menu">
-                  <li class="active"><a href="#">about us</a></li>
-                  <li><a href="/final_project/pages/services.html">services</a></li>
+                  <li><a href="#">about us</a></li>
+                  <li class="active">
+                    <a href="/final_project/pages/services.html">services</a>
+                  </li>
                   <li><a href="#">team</a></li>
                   <li><a href="#">publications</a></li>
                   <li><a href="#">contact</a></li>
@@ -82,73 +80,19 @@
       </header>
       <main>
         <div class="bg-gradient">
-          <section class="intro container">
-            <h1 class="intro__title">you legal solutions provider</h1>
-            <a href="#anchor" class="intro__anchor"></a>
-          </section>
-          <section class="tabs" id="anchor">
-            <div class="container">
-            <ul class="tabs__list">
-              <li class="tabs__link active">Consistent</li>
-              <li class="tabs__link">Customer oriented</li>
-              <li class="tabs__link">Innovative</li>
-              <li class="tabs__link">Business oriented</li>
-            </ul>
-            <div class="tabs__content">
-              <div class="tabs__content-text active">
-                <h2 class="tabs__title">
-                  1. We turn the idea of legal services
-                </h2>
-                <p>
-                  Consolidating many years of experience and practice, the
-                  company's lawyers accompany complex projects and achieve a
-                  number of important decisions for the industry. Many of them
-                  form the practice of applying the law of the sea in Ukraine.
-                </p>
-              </div>
-              <div class="tabs__content-text">
-                <h2 class="tabs__title">
-                  2. We turn the idea of legal services
-                </h2>
-                <p>
-                  Consolidating many years of experience and practice, the
-                  company's lawyers accompany complex projects and achieve a
-                  number of important decisions for the industry. Many of them
-                  form the practice of applying the law of the sea in Ukraine.
-                </p>
-              </div>
-              <div class="tabs__content-text">
-                <h2 class="tabs__title">
-                  3. We turn the idea of legal services
-                </h2>
-                <p>
-                  Consolidating many years of experience and practice, the
-                  company's lawyers accompany complex projects and achieve a
-                  number of important decisions for the industry. Many of them
-                  form the practice of applying the law of the sea in Ukraine.
-                </p>
-              </div>
-              <div class="tabs__content-text">
-                <h2 class="tabs__title">
-                  4. We turn the idea of legal services
-                </h2>
-                <p>
-                  Consolidating many years of experience and practice, the
-                  company's lawyers accompany complex projects and achieve a
-                  number of important decisions for the industry. Many of them
-                  form the practice of applying the law of the sea in Ukraine.
-                </p>
-              </div>
-            </div>
-            </div>
-          </section>
           <section class="services container">
-            <a class="link-btn cat-link" href="/final_project/pages/services.html">services</a>
-            <h2 class="services__main-title">What can we do better than others?</h2>
+            <h2 class="services__main-title">
+              What can we do better than others?
+            </h2>
             <ul class="services__list">
               <li>
                 <span class="services__advanteges">
-                  <svg class="services__icons" viewBox="0 0 22 22" width="64" height="64">
+                  <svg
+                    class="services__icons"
+                    viewBox="0 0 22 22"
+                    width="64"
+                    height="64"
+                  >
                     <use
                       xlink:href="../src/img/icons/icons.svg#icon-Ecommerce"
                       x="0"
@@ -168,7 +112,12 @@
               </li>
               <li>
                 <span class="services__advanteges">
-                  <svg class="services__icons" viewBox="0 0 22 22" width="64" height="64">
+                  <svg
+                    class="services__icons"
+                    viewBox="0 0 22 22"
+                    width="64"
+                    height="64"
+                  >
                     <use
                       xlink:href="../src/img/icons/icons.svg#icon-Support"
                       x="0"
@@ -190,7 +139,12 @@
               </li>
               <li>
                 <span class="services__advanteges">
-                  <svg class="services__icons" viewBox="0 0 22 22" width="64" height="64">
+                  <svg
+                    class="services__icons"
+                    viewBox="0 0 22 22"
+                    width="64"
+                    height="64"
+                  >
                     <use
                       xlink:href="../src/img/icons/icons.svg#icon-Coprorate"
                       x="0"
@@ -211,7 +165,12 @@
               </li>
               <li>
                 <span class="services__advanteges">
-                  <svg class="services__icons" viewBox="0 0 22 22" width="64" height="64">
+                  <svg
+                    class="services__icons"
+                    viewBox="0 0 22 22"
+                    width="64"
+                    height="64"
+                  >
                     <use
                       xlink:href="../src/img/icons/icons.svg#icon-Trust"
                       x="0"
@@ -233,7 +192,12 @@
               </li>
               <li>
                 <span class="services__advanteges">
-                  <svg class="services__icons" viewBox="0 0 22 22" width="64" height="64">
+                  <svg
+                    class="services__icons"
+                    viewBox="0 0 22 22"
+                    width="64"
+                    height="64"
+                  >
                     <use
                       xlink:href="../src/img/icons/icons.svg#icon-Protection"
                       x="0"
@@ -255,7 +219,12 @@
               </li>
               <li>
                 <span class="services__advanteges">
-                  <svg class="services__icons" viewBox="0 0 22 22" width="64" height="64">
+                  <svg
+                    class="services__icons"
+                    viewBox="0 0 22 22"
+                    width="64"
+                    height="64"
+                  >
                     <use
                       xlink:href="../src/img/icons/icons.svg#icon-Court"
                       x="0"
@@ -275,38 +244,6 @@
             </ul>
           </section>
         </div>
-        <section class="teams">
-          <div class="container">
-            <div class="swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper teams__holder">
-                <!-- Slides -->
-                <div class="swiper-slide teams__content-box">
-                  <div class="teams__img">
-                    <img src="/src/img/webp/team01.png" alt="#" />
-                  </div>
-                  <div class="teams__text">
-                    <a class="link-btn cat-link" href="#">команда</a>
-                    <h2 class="teams__title">
-                      Ми звикли брати на себе відповідальність та завжди
-                      гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
-                      коли більшість безсилі.
-                    </h2>
-                    <span class="teams__name">Олександр Олександровський</span>
-                    <span class="teams__position">Керуючий партнер</span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  Slide 2
-                <div class="swiper-slide">
-                 Slide 3
-                </div>
-                ...
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
         <section class="partners">
           <div class="container">
             <p class="partners__text">They already trust us</p>
@@ -314,14 +251,14 @@
               <li style="background-color: #1c4280" class="partners__item">
                 <a class="partners__link" href="#" target="_blank"
                   ><img
-                    src="/src/img/webp/partners_logo/hillel_logo_white.png"
+                    src="../src/img/webp/partners_logo/hillel_logo_white.png"
                     alt="Hilel logo"
                 /></a>
               </li>
               <li style="background-color: #143646" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/wannabiz_logo.png"
+                    src="../src/img/webp/partners_logo/wannabiz_logo.png"
                     alt="Wannabiz logo"
                   />
                 </a>
@@ -329,7 +266,7 @@
               <li style="background-color: #f48b30" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/tapgerine_logo.png"
+                    src="../src/img/webp/partners_logo/tapgerine_logo.png"
                     alt="Tapgerine logo"
                   />
                 </a>
@@ -337,7 +274,7 @@
               <li style="background-color: #9e4dc3" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/3dlook_logo.png"
+                    src="../src/img/webp/partners_logo/3dlook_logo.png"
                     alt="3dlook logo"
                   />
                 </a>
@@ -345,7 +282,7 @@
               <li style="background-color: #fd9339" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/orangear_logo.png"
+                    src="../src/img/webp/partners_logo/orangear_logo.png"
                     alt="Orangear logo"
                   />
                 </a>
@@ -353,7 +290,7 @@
               <li style="background-color: #e2e2e4" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/adtelligent_logo.png"
+                    src="../src/img/webp/partners_logo/adtelligent_logo.png"
                     alt="Adtelligent logo"
                   />
                 </a>
@@ -361,7 +298,7 @@
               <li style="background-color: #c71c36" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/clickky_logo.png"
+                    src="../src/img/webp/partners_logo/clickky_logo.png"
                     alt="Clickky logo"
                   />
                 </a>
@@ -369,7 +306,7 @@
               <li style="background-color: #dcf3f9" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/eco-leasing_logo.png"
+                    src="../src/img/webp/partners_logo/eco-leasing_logo.png"
                     alt="Eco-leasing logo"
                   />
                 </a>
@@ -377,7 +314,7 @@
               <li style="background-color: #eaeaea" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/infratek_logo.png"
+                    src="../src/img/webp/partners_logo/infratek_logo.png"
                     alt="Infratek logo"
                   />
                 </a>
@@ -385,7 +322,7 @@
               <li style="background-color: #282240" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/city-park_logo.png"
+                    src="../src/img/webp/partners_logo/city-park_logo.png"
                     alt="City-park logo"
                   />
                 </a>
@@ -393,7 +330,7 @@
               <li style="background-color: #1d4568" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/artprint_logo.png"
+                    src="../src/img/webp/partners_logo/artprint_logo.png"
                     alt="Artprint logo"
                   />
                 </a>
@@ -401,7 +338,7 @@
               <li style="background-color: #000000" class="partners__item">
                 <a class="partners__link" href="#" target="_blank">
                   <img
-                    src="/src/img/webp/partners_logo/ultimatecard_logo.png"
+                    src="../src/img/webp/partners_logo/ultimatecard_logo.png"
                     alt="Ultimatecard logo"
                   />
                 </a>
@@ -409,63 +346,15 @@
             </ul>
           </div>
         </section>
-        <section class="news">
-          <div class="container">
-          <a class="news__main-link link-btn cat-link" href="#" target="_blank">Publications</a>
-          <h2 class="news__title">We have something to tell</h2>
-          <ul class="news__list">
-            <li class="news__card">
-              <img class="news__img" src="../src/img/webp/news-img01.png" alt="Analytics and calculations image">
-              <div class="news__content">
-              <a class="news__link cat-link" href="#">Equity associate</a>
-              <time class="news__time" datetime="April 22">April 22</time>
-              <span class="news__content-line"></span>
-              <p class="news__text">
-                I'm a jun on projects. I am a co-owner of a law firm. How it
-                happened. Before entering my parents told me that if I…
-              </p>
-              </div>
-            </li>
-            <li class="news__card">
-              <img class="news__img" src="../src/img/webp/news-img02.png" alt="GDPR organization image">
-                <div class="news__content">
-              <a class="news__link cat-link" href="#">
-                  Penalty for the Good Corporation: what will happen to Google
-                  and others for violating the GDPR
-                </a>
-              <time class="news__time" datetime="September 29">September 29</time>
-              <span class="news__content-line"></span>
-              <p class="news__text">
-                And why the recovery of 50 million euros could be a fateful
-                precedent According to Mind.ua January 21 National Commission
-                for Data Protection.
-              </p>
-              </div>
-            </li>
-            <li class="news__card">
-              <img class="news__img" src="../src/img/webp/news-img03.png" alt="Team work">
-              <div class="news__content">
-              <a class="news__link cat-link" href="#">Millennial Testament</a>
-              <time class="news__time" datetime="August 19">August 19</time>
-              <span class="news__content-line"></span>
-              <p class="news__text">
-                What and how modern vloggers, opinion leaders and
-                crypto-millionaires will inherit A typical legacy of the
-                Ukrainian generation X looks like this: an apartment in…
-              </p>
-              </div>
-            </li>
-          </ul>
-          </div>
-        </section>
       </main>
       <footer class="footer">
         <div class="container">
-          <span class="footer__line"></span>
           <ul class="footer__nav">
             <li><address>Kyiv, Mechnikova str, 14/1</address></li>
             <li><a class="footer__geo-btn cat-link" href="#">On map</a></li>
-            <li class="footer__coopiright"><p>© 2021 HLEGAL Law company, LLC</p></li>
+            <li class="footer__coopiright">
+              <p>© 2021 HLEGAL Law company, LLC</p>
+            </li>
           </ul>
           <ul class="footer__menu">
             <li>
@@ -477,21 +366,25 @@
                   height="24"
                 >
                   <use
-                    href="/src/img/icons/icons.svg#icon-facebook_logo"
+                    href="../src/img/icons/icons.svg#icon-facebook_logo"
                     x="0"
                     y="0"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li><a class="footer__link" href="telto:+0800211927">0800 211 927</a></li>
             <li>
-              <a class="cat-link" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+              <a class="footer__link" href="telto:+0800211927">0800 211 927</a>
+            </li>
+            <li>
+              <a class="cat-link" href="mailto:contact@forstudy.space"
+                >contact@forstudy.space</a
+              >
             </li>
           </ul>
         </div>
       </footer>
     </div>
-    <script type="module" src="../src/js/main.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

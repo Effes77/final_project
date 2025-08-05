@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import '../scss/style.scss';
 
+
 const swiper = new Swiper('.swiper', {
   // configure Swiper to use modules
     modules: [Pagination],  
