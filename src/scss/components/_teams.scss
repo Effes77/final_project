@@ -14,12 +14,16 @@
     &__holder {
         border-radius: 12px;
         overflow: hidden;
-        background: $second-color;
-        margin-bottom: 60px;
     }
+
+        @media (max-width: 768px) {
+            margin: 0;
+        }
 
     &__content-box {
         display: flex;
+        background: $second-color;
+        margin-bottom: 60px;
 
         @media (max-width: 980px) {
             flex-direction: column;

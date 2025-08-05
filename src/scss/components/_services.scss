@@ -1,5 +1,5 @@
 .services {
-    padding: 60px 180px;
+    padding: 60px 160px;
     display: flex;
     flex-direction: column;
 
@@ -11,47 +11,27 @@
         padding: 30px;
     }
 
-    &__btn {
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        width: 95px;
-        position: relative;
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 7px;
-            height: 7px;
-            border: 1px solid $active-main-color;
-            border-width: 2px 2px 0 0;
-            display: inline-block;
-            transform: rotate(45deg);
-            left: 85px;
-            top: 6px;
-        }
-
-        &:hover {
-            color: $accent-color;
-        }
-        &:hover::after {
-            border: 0px solid $accent-color;
-            border-width: 2px 2px 0 0;
-            }
-    }
-
     &__main-title {
         @include text-gradient;
         font-size: $h1-fz;
+        margin-top: 10px;
         margin-bottom: 60px;
         font-weight: 700;
+
+        @media (max-width: 580px) {
+            font-size: $h2-fz;
+            margin-bottom: 30px;
+        } 
+    }
+
+    .container {
+        padding: 0;
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 60px;
-
         @include flex-spasing(3, 60px);
 
         @media (max-width: 768px) {
@@ -60,9 +40,10 @@
         
         @media (max-width: 580px) {
             @include flex-spasing(1, 30px);
-            padding-bottom: 60px;
-        } 
-          
+        }    
+        @media (max-width: 580px) {
+            padding-bottom: 30px;
+        }    
     }
 
     &__advanteges {
@@ -73,18 +54,18 @@
         border-radius: 24px;
         justify-content: center;
         align-items: center;
+        
     }
 
-    // &__icons {
-    //     mask: url('/src/img/icons/icons.svg#icon-Ecommerce') no-repeat center / contain;
-    //     -webkit-mask: url('/src/img/icons/icons.svg#icon-Ecommerce') no-repeat center / contain;
-    //     background: linear-gradient(90deg, #F0145A, #EF8080);
-    // }
+    &__icons {
+        fill: $accent-color;
+    }
 
     &__title {
         font-size: $h3-fz;
         margin-bottom: 15px;
         margin-top: 30px;
+
 
         &__title {
             line-height: 26px;

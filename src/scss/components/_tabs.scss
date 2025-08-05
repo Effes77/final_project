@@ -1,9 +1,7 @@
 .tabs {
-    display: flex;
-    margin: 0 auto;
+    margin: 60px 280px 0 280px;
     padding: 30px 0;
-    margin: 60px 280px;
-
+    
     @media (max-width: 1440px) {
         margin: 60px 180px;
     }  
@@ -21,6 +19,14 @@
         padding: 0;
     } 
 
+    .container {
+        display: flex;
+        padding: 0;
+
+        @media (max-width: 768px) {
+            display: block;
+    }
+    }
 
     &__list {
         font-size: $h1-fz;
@@ -29,8 +35,7 @@
         flex-direction: column;
         gap: 25px;
         color: $second-text-color;
-        margin-bottom: 15px;
-        width: 47%;
+        width: 40%;
         text-align: end;
         padding-right: 60px;
         white-space: nowrap;
@@ -81,6 +86,7 @@
         border: solid rgba($color: $base-secondary-color, $alpha: 0.3);
         border-width: 0 0 0 4px;
         padding-left: 60px;
+        width: 50%;
 
         @media (max-width: 1440px) {
             width: 90%;
